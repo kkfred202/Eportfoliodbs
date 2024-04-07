@@ -322,11 +322,11 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color:var(--text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 60px;
-    background: #fff;
+    background: transparent;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -350,7 +350,7 @@ nav ul li a:hover::after{
     transition: background 0.4s;
 }
 .btn:hover{
-    background: var(--main-color);
+    background: var(--second-bg-color);
     
 }
 
