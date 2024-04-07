@@ -76,19 +76,26 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 25%;
     font-size: 30px;
+    
+}
+.header-text p {
+    font-size: 2rem;
+    font-weight: 700;
+    color:transparent;
+    -webkit-text-stroke: 0.9px var(--main-color); 
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 .header-text h1 span{
     
 }
 
 .btn-box {
-    margin-top: 30px;
+    margin-top: 10px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -340,10 +347,11 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    transition: background 0.4s;
 }
 .btn:hover{
-    background: var(--s);
+    background: var(--main-color);
+    
 }
 
 /* ---------contact-------- */
