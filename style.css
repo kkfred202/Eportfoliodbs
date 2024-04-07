@@ -88,6 +88,7 @@ nav ul li a:hover::after{
 }
 
 .btn-box {
+    margin-top: 30px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -96,16 +97,58 @@ nav ul li a:hover::after{
 }
 
 .btn-box .btns {
+    margin-top: 40px;
     text-decoration: none;
     position: relative;
     display: inline-flex;
-    border: 3px solid;
-    border-radius: 10px;
+    justify-content: center;
     align-items: center;
-    width: 20rem;
-    height: 140%;
-    background: var(--main-color);
+    width: 15rem;
+    height: 120%;  
+    background:var(--main-color) ;
+    border-radius: .5rem;
+    border: .2rem solid var(--main-color);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btns:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+    background:var(--bg-color);
+    color: var(--main-color);
+
+}
+.btn-box .btns:nth-child(2):hover{
+    color: var(--bg-color);
     
+}
+.btn-box
+.btns:nth-child(2)::before{
+    background: var(--main-color);
+}
+.btn-box 
+.btns:hover{
+    color: var(--main-color);
+}
+ 
+.btn-box .btns::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box .btns:hover::before{
+    width: 100%;
 }
 /* -----------about--------------- */
 #about{
@@ -126,7 +169,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     
-    margin-top: 55px;
+    margin-top: 60px;
     height: 110%;
     width: auto;
     border-radius: 10px;
