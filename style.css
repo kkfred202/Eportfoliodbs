@@ -110,7 +110,7 @@ nav ul li a:hover::after{
 /* -----------about--------------- */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color:var(--text-color);
 }
 .row{
     display: flex;
@@ -125,8 +125,13 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .about-col-1 img{
-    width: 100%;
+
+    margin-top: 70px;
+    height: 100%;
+    width: auto;
     border-radius: 15px;
+    
+    overflow: hidden;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -172,7 +177,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: var(--main-color);
     font-size: 14px;
 }
 .tab-contents{
@@ -217,7 +222,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: var(--second-bg-color);
     transform: translateY(-10px);
 }
 /* -------portfolio----------- */
@@ -237,14 +242,16 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 500px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), var(--second-bg-color));
     border-radius: 10px;
     position: absolute;
     left: 0;
